@@ -7,7 +7,7 @@
 int main() {
   //Declarando todas as variaveis.
    char Estado1 ,Estado2;
-   char Codigo1[03] ,Cidade1[20] ,Codigo2[03] ,Cidade2[20];
+   char Codigo1[3] ,Cidade1[50] ,Codigo2[3] ,Cidade2[60];
    int  Populacao1,Turistico1,Populacao2,Turistico2;
    float Area1, PIB1, Area2, PIB2;
 
@@ -55,20 +55,44 @@ int main() {
    printf("Digite o PIB!\n");
    scanf("%f",&PIB2);
 
-   printf("Digite o n° de pontos turisticos!");
+   printf("Digite o n° de pontos turisticos!\n");
    scanf("%d",&Turistico2);
 
-   printf("Concluido,acompanhe o resultado!   \n");//aconteceu diversos erros na compilação,notei que se colocar . ou , nos dados acontece erros
+   printf("Concluido,acompanhe o resultado!\n");
+   printf("\n");
+   printf("\n");
 
-   printf("Carta1                             Carta2\n");
-  printf("Estado:%c                           Estado:%c      \n ",Estado1,Estado2);
-  printf("Código:%s                     Código:%s      \n ",Codigo1,Codigo2);
-   printf("Cidade: %s                           Cidade:%s      \n",Cidade1,Cidade2);
-   printf("População:%d                  População%d    \n",Populacao1,Populacao2);
-   printf("Área:%f                 Área%f         \n",Area1,Area2);
-   printf("PIB:%f                  PIB:%f          \n",PIB1,PIB2);
-   printf("P.Turisticos:%d                   P.Turisticos:%d \n",Turistico1,Turistico2);
-//tentei alinhar os Resultados ,mais sem sucesso.
+
+   printf("Carta 1\n");
+   printf("Estado:%c  \n",Estado1);
+   printf("Código:%s  \n",Codigo1);//não entendo pq não aparece 
+   printf("Cidade:%s  \n",Cidade1);//não entendo pq não aprece
+   printf("População:%d  \n",Populacao1);
+   printf("Área:%f  \n",Area1);
+   printf("PIB:%f  \n",PIB1);
+   printf("Pontos Turisticos:%d  \n",Turistico1);
+
+   printf("\n");
+   printf("\n");
+
+   printf("Carta 2\n");
+   printf("Estado:%c  \n",Estado2);
+   printf("Código:%s  \n",Codigo2);
+   printf("Cidade:%s  \n",Cidade2);
+   printf("População:%d  \n",Populacao2);
+   printf("Área:%f  \n",Area2);
+   printf("PIB:%f  \n",PIB2);
+   printf("Pontos Turisticos:%d  \n",Turistico2);
+
+
+  
+
+
+
+
+
+
+
 
 
 
