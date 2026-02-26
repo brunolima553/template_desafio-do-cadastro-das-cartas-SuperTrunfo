@@ -20,7 +20,7 @@ int main() {
    scanf("%s",Codigo1);
 
    printf("Digite o nome da cidade!   \n");
-   scanf("%s",Cidade1);
+   scanf("%s",Cidade1);//string não precisa do &
 
    printf("Digite a população!   \n");
    scanf("%d",&Populacao1);
