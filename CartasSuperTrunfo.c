@@ -6,15 +6,23 @@
  int main(){
 
     //Declarando as variaveis
-    char estado1, estado2;
-    char codigo1[03],codigo2[03],cidade1[30],cidade2[40];
-    int populacao1,populacao2,turistico1,turistico2;
-    float area1, area2, pib1, pib2;
+    //Carta 1
+    char estado1[30];
+    char codigo1[10],cidade1[60];
+    int populacao1,turistico1;
+    float area1,pib1;
+
+    //Carta 2
+     char estado2[30];
+     char codigo2[10],cidade2[60];
+     int populacao2,turistico2;
+     float area2,pib2;
+
 
     printf("Vamos começar o cadastramento de cartas!  \n");//interação
     printf("Carta 1  \n");//interação
     printf("Digite o Estado com um caracter de 'A' á 'H'  \n");//Saida de dados 
-    scanf("%c",&estado1);//Entrada de dados
+    scanf("%s",estado1);//Entrada de dados
 
     printf("Digite o codigo da carta com três caracteres!  \n");
     scanf("%s",codigo1);
@@ -31,7 +39,7 @@
     printf("Digite o PIB!  \n");
     scanf("%f",&pib1);
 
-    printf("Digite o n° de pontos turisticos!  \n");
+    printf("Digite o número de pontos turisticos!  \n");
     scanf ("%d",&turistico1);
 
     printf("Primeira carta concluída! \n ");
@@ -39,7 +47,7 @@
 
     printf("Carta 2  \n");
     printf("Digite o  estado com um caracter de 'A' á 'H'  \n");//saísa de dados
-    scanf(" %c",&estado2);//entrada de dados
+    scanf(" %s",estado2);//entrada de dados
 
     printf("Digite o codigo da carta com três caracteres!  \n");
     scanf("%s",codigo2);
@@ -56,7 +64,7 @@
     printf("Digite o PIB!  \n");
     scanf("%f",&pib2);
 
-    printf("Digite o n° de pontos turisticos!  \n");
+    printf("Digite o número de pontos turisticos!  \n");
     scanf("%d",&turistico2);
 
     printf("Concluído,acompanhe o resultado!  \n");
@@ -64,7 +72,7 @@
     printf("\n");
 
     printf("Carta 1  \n");
-    printf("Estado:%c \n",estado1);
+    printf("Estado:%s \n",estado1);
     printf("Código:%s \n",codigo1);
     printf("Cidade:%s \n",cidade1);
     printf("População:%d \n",populacao1);
@@ -75,7 +83,7 @@
     printf("\n");
 
     printf("Carta 2 \n");
-    printf("Estado:%c \n",estado2);
+    printf("Estado:%s \n",estado2);
     printf("Código:%s \n",codigo2);
     printf("Cidade:%s \n",cidade2);
     printf("População:%d \n",populacao2);
