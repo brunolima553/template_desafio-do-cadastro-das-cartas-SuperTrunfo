@@ -11,12 +11,15 @@
     char codigo1[10],cidade1[60];
     int populacao1,turistico1;
     float area1,pib1;
+    float densidade1,percapita1;  //acrecentando a densidade e pib per capita 
+
 
     //Carta 2
      char estado2[30];
      char codigo2[10],cidade2[60];
      int populacao2,turistico2;
      float area2,pib2;
+     float densidade2, percapita2;  //acrecentando a densidade e pib per capita
 
 
     printf("Vamos começar o cadastramento de cartas!  \n");//interação
@@ -71,14 +74,25 @@
     printf("\n");
     printf("\n");
 
+    //calculos de densidade e renda per capita, forçando a todos serem float
+    densidade1 = (float) populacao1 / area1;
+    percapita1 = (float) pib1 / populacao1;
+
+    
+    densidade2 = (float) populacao2 / area2;
+    percapita2 = (float) pib2 / populacao2;
+
     printf("Carta 1  \n");
     printf("Estado:%s \n",estado1);
     printf("Código:%s \n",codigo1);
     printf("Cidade:%s \n",cidade1);
-    printf("População:%d \n",populacao1);
-    printf("Área:%f \n",area1);
-    printf("PIB:%f \n",pib1);
+    printf("População:%d Habitantes \n",populacao1);
+    printf("Área:%f km2 \n",area1);
+    printf("PIB:%f reais\n",pib1);
     printf("Pontos Turisticos:%d \n",turistico1);
+    printf("Densidade Populacional: %.2f hab/ km2 \n" ,densidade1);
+    printf("Renda per capita: %.5f reais\n",percapita1);
+
     printf("\n");
     printf("\n");
 
@@ -86,10 +100,12 @@
     printf("Estado:%s \n",estado2);
     printf("Código:%s \n",codigo2);
     printf("Cidade:%s \n",cidade2);
-    printf("População:%d \n",populacao2);
-    printf("Área:%f \n",area2);
-    printf("PIB:%f \n",pib2);
-    printf("Pontos Turisticos:%d  \n",turistico2); //finalizado,alguns erros quando aparece os dados das cartas 
+    printf("População:%d Habitantes\n",populacao2);
+    printf("Área:%f  km2\n",area2);
+    printf("PIB:%f  reais\n",pib2);
+    printf("Pontos Turisticos:%d  \n",turistico2); 
+    printf("Densidade Populacional: %.2f hab/ km2 \n" ,densidade2);
+    printf("Renda per capita: %.5f reais\n",percapita2); 
 
   return 0;
  }
