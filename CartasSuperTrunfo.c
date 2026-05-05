@@ -151,7 +151,7 @@
     printf("***Escolha uma opção***\n");
     scanf("%d",&escolhaJogador);
 
-     //usando if/else dentro so switch
+     //usando if/else dentro do switch
     switch (escolhaJogador)
     {
      case 1:
